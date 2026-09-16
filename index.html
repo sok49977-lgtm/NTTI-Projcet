@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Personal portfolio of a Web Developer studying at National Technical Training Institute and working at samnab Technology.">
+    <title>Your Name | Web Developer</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="90" tabindex="0">
+    <!--  Navbar  -->
+    <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#home" aria-label="Home">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfOQ9QfX3jiIBV8iMWh8rFA2yyvUe2xN-kiR0kYgJM8w&s" alt="National Technical Training Institute logo" class="brand-logo">
+                <span class="brand-name">SOk<span>SOPHEA</span></span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-nav" href="#contact">Let's Talk <i class="bi bi-arrow-up-right"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!--  Hero  -->
+        <section id="home" class="hero-section section-padding">
+            <div class="hero-grid"></div>
+            <div class="hero-orb hero-orb-one"></div>
+            <div class="hero-orb hero-orb-two"></div>
+
+            <div class="container position-relative">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-7">
+                        <div class="hero-content reveal reveal-left">
+                            <div class="eyebrow">
+                                <span class="status-dot"></span>
+                                Available for opportunities
+                            </div>
+
+                            <p class="hero-greeting">Hello, I'm</p>
+                            <h1>SOK<span class="gradient-text">SOPHEA</span></h1>
+                            <h2 class="hero-role">I'm a <span id="typingText"></span><span
+                                    class="typing-cursor">|</span></h2>
+
+                            <p class="hero-description">
+                                I build modern, responsive, and user-friendly websites with clean code,
+                                thoughtful design, and smooth interactions.
+                            </p>
+
+                            <div class="hero-actions d-flex flex-wrap gap-3">
+                                <a href="#projects" class="btn btn-primary-custom">
+                                    View My Work <i class="bi bi-arrow-right"></i>
+                                </a>
+                                <a href="#contact" class="btn btn-outline-custom">
+                                    Contact Me <i class="bi bi-chat-dots"></i>
+                                </a>
+                            </div>
+
+                            <div class="social-links mt-4">
+                                <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                                <a href="#" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <div class="hero-visual reveal reveal-right">
+                            <div class="profile-glow"></div>
+                            <div class="profile-card">
+                                <div class="profile-ring"></div>
+                                <img src="f68652e0-f515-492e-86f3-37a81c0f39e6.png" alt="Portfolio profile placeholder"
+                                    class="profile-image">
+                                <div class="floating-badge badge-top">
+                                    <i class="bi bi-code-slash"></i>
+                                    <span>Clean Code</span>
+                                </div>
+                                <div class="floating-badge badge-bottom">
+                                    <i class="bi bi-phone"></i>
+                                    <span>Responsive</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#about" class="scroll-indicator" aria-label="Scroll to About">
+                <span>Scroll Down</span>
+                <i class="bi bi-arrow-down"></i>
+            </a>
+        </section>
+
+        <!--  About  -->
+        <section id="about" class="section-padding">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="section-label">ABOUT ME</span>
+                    <h2>Turning ideas into <span class="gradient-text">digital experiences.</span></h2>
+                    <p>I am continuously learning, building, and improving my skills as a Web Developer.</p>
+                </div>
+
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-5 reveal reveal-left">
+                        <div class="about-image-wrap">
+                            <div class="about-pattern"></div>
+                            <img src="ntti-logo.jpg" alt="National Technical Training Institute"
+                                class="about-image">
+                            <div class="education-chip">
+                                <img src="khmer-logo.jpg" alt="Institute logo">
+                                <div>
+                                    <strong>NTTI</strong>
+                                    <small>Technical Training</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7 reveal reveal-right">
+                        <div class="about-content">
+                            <h3>Web Developer & Lifelong Learner</h3>
+                            <p>
+                                I am studying at the <strong>National Technical Training Institute (NTTI)</strong>,
+                                developing practical skills in web development, responsive design, and modern
+                                front-end technologies.
+                            </p>
+                            <p>
+                                I also have work experience at <strong>samnab Technology</strong>, where I continue
+                                learning through practical projects and real-world technology workflows.
+                            </p>
+
+                            <div class="info-list">
+                                <div><span>Education</span><strong>National Technical Training Institute</strong></div>
+                                <div><span>Work Experience</span><strong>samnab Technology</strong></div>
+                                <div><span>Focus</span><strong>Web Development & UI</strong></div>
+                                <div><span>Goal</span><strong>Professional Web Developer</strong></div>
+                            </div>
+
+                            <a href="#contact" class="text-link">Let's work together <i
+                                    class="bi bi-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stats-grid mt-5 reveal">
+                    <div class="stat-card">
+                        <i class="bi bi-mortarboard"></i>
+                        <div><strong>NTTI</strong><span>Technical Education</span></div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="bi bi-briefcase"></i>
+                        <div><strong>samnab</strong><span>Technology Experience</span></div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="bi bi-code-square"></i>
+                        <div><strong>Web</strong><span>Development Focus</span></div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="bi bi-phone"></i>
+                        <div><strong>100%</strong><span>Responsive Mindset</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  Skills  -->
+        <section id="skills" class="section-padding section-dark">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="section-label">MY SKILLS</span>
+                    <h2>Tools I use to <span class="gradient-text">build the web.</span></h2>
+                    <p>Core technologies and practical skills I am developing through study and projects.</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4 reveal">
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="bi bi-filetype-html"></i></div>
+                            <div class="skill-head">
+                                <h3>HTML5</h3><span>90%</span>
+                            </div>
+                            <div class="skill-track"><span style="width:90%"></span></div>
+                            <p>Semantic and accessible page structure.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 reveal">
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="bi bi-filetype-css"></i></div>
+                            <div class="skill-head">
+                                <h3>CSS3</h3><span>85%</span>
+                            </div>
+                            <div class="skill-track"><span style="width:85%"></span></div>
+                            <p>Modern layouts, animations, and visual design.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 reveal">
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="bi bi-filetype-js"></i></div>
+                            <div class="skill-head">
+                                <h3>JavaScript</h3><span>75%</span>
+                            </div>
+                            <div class="skill-track"><span style="width:75%"></span></div>
+                            <p>Interactive components and front-end logic.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 reveal">
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="bi bi-bootstrap"></i></div>
+                            <div class="skill-head">
+                                <h3>Bootstrap 5</h3><span>88%</span>
+                            </div>
+                            <div class="skill-track"><span style="width:88%"></span></div>
+                            <p>Responsive grids and reusable UI utilities.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 reveal">
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="bi bi-git"></i></div>
+                            <div class="skill-head">
+                                <h3>Git / GitHub</h3><span>78%</span>
+                            </div>
+                            <div class="skill-track"><span style="width:78%"></span></div>
+                            <p>Version control and project publishing.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 reveal">
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="bi bi-phone"></i></div>
+                            <div class="skill-head">
+                                <h3>Responsive Design</h3><span>90%</span>
+                            </div>
+                            <div class="skill-track"><span style="width:90%"></span></div>
+                            <p>Mobile-first interfaces for every screen size.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  Services  -->
+        <section id="services" class="section-padding">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="section-label">SERVICES</span>
+                    <h2>What I can <span class="gradient-text">help with.</span></h2>
+                    <p>Practical web solutions focused on clean design, usability, and responsive performance.</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <article class="service-card">
+                            <div class="service-number">01</div>
+                            <div class="service-icon"><i class="bi bi-code-square"></i></div>
+                            <h3>Web Development</h3>
+                            <p>Modern websites built with clean HTML, CSS, JavaScript, and Bootstrap.</p>
+                            <a href="#contact" aria-label="Ask about Web Development"><i
+                                    class="bi bi-arrow-up-right"></i></a>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <article class="service-card">
+                            <div class="service-number">02</div>
+                            <div class="service-icon"><i class="bi bi-phone"></i></div>
+                            <h3>Responsive Design</h3>
+                            <p>Layouts that adapt smoothly to desktop, tablet, and mobile devices.</p>
+                            <a href="#contact" aria-label="Ask about Responsive Design"><i
+                                    class="bi bi-arrow-up-right"></i></a>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <article class="service-card">
+                            <div class="service-number">03</div>
+                            <div class="service-icon"><i class="bi bi-palette"></i></div>
+                            <h3>UI Design</h3>
+                            <p>Professional interfaces with modern typography, spacing, cards, and interactions.</p>
+                            <a href="#contact" aria-label="Ask about UI Design"><i class="bi bi-arrow-up-right"></i></a>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <article class="service-card">
+                            <div class="service-number">04</div>
+                            <div class="service-icon"><i class="bi bi-tools"></i></div>
+                            <h3>Website Maintenance</h3>
+                            <p>Content updates, small improvements, bug fixes, and ongoing front-end support.</p>
+                            <a href="#contact" aria-label="Ask about Website Maintenance"><i
+                                    class="bi bi-arrow-up-right"></i></a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  Projects  -->
+        <section id="projects" class="section-padding section-dark">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="section-label">MY PROJECTS</span>
+                    <h2>Selected <span class="gradient-text">work & practice.</span></h2>
+                    <p>A collection of portfolio projects demonstrating front-end development and design skills.</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4 reveal">
+                        <article class="project-card">
+                            <div class="project-image project-gradient-one">
+                                <div class="project-window">
+                                    <span></span><span></span><span></span>
+                                    <div class="window-content"><i class="bi bi-code-slash"></i></div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+                                <h3>Personal Portfolio</h3>
+                                <p>A responsive portfolio website with animations and modern UI.</p>
+                                <div class="project-links">
+                                    <a href="#" class="btn-project">Live Demo <i
+                                            class="bi bi-box-arrow-up-right"></i></a>
+                                    <a href="#" class="icon-project" aria-label="Portfolio GitHub"><i
+                                            class="bi bi-github"></i></a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 reveal">
+                        <article class="project-card">
+                            <div class="project-image project-gradient-two">
+                                <div class="project-window">
+                                    <span></span><span></span><span></span>
+                                    <div class="window-content"><i class="bi bi-grid-1x2"></i></div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-tags"><span>Bootstrap</span><span>CSS</span><span>JS</span></div>
+                                <h3>Modern Landing Page</h3>
+                                <p>A clean Bootstrap landing page designed for responsive performance.</p>
+                                <div class="project-links">
+                                    <a href="#" class="btn-project">Live Demo <i
+                                            class="bi bi-box-arrow-up-right"></i></a>
+                                    <a href="#" class="icon-project" aria-label="Landing Page GitHub"><i
+                                            class="bi bi-github"></i></a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 reveal">
+                        <article class="project-card">
+                            <div class="project-image project-gradient-three">
+                                <div class="project-window">
+                                    <span></span><span></span><span></span>
+                                    <div class="window-content"><i class="bi bi-bar-chart"></i></div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-tags"><span>HTML</span><span>Bootstrap</span><span>UI</span></div>
+                                <h3>Dashboard UI</h3>
+                                <p>A dashboard concept focused on reusable cards and clear information hierarchy.</p>
+                                <div class="project-links">
+                                    <a href="#" class="btn-project">Live Demo <i
+                                            class="bi bi-box-arrow-up-right"></i></a>
+                                    <a href="#" class="icon-project" aria-label="Dashboard GitHub"><i
+                                            class="bi bi-github"></i></a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  Education / Experience  -->
+        <section id="experience" class="section-padding">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="section-label">JOURNEY</span>
+                    <h2>Education & <span class="gradient-text">experience.</span></h2>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item reveal reveal-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date">EDUCATION</span>
+                            <h3>National Technical Training Institute</h3>
+                            <h4>Information Technology / Web Development</h4>
+                            <p>Building a strong technical foundation through practical learning, programming, web
+                                development, and technology projects.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal reveal-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date">EXPERIENCE</span>
+                            <h3>samnab Technology</h3>
+                            <h4>Technology / Practical Experience</h4>
+                            <p>Developing practical skills, learning professional workflows, and gaining experience with
+                                technology-related tasks.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal reveal-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date">CURRENT GOAL</span>
+                            <h3>Professional Web Developer</h3>
+                            <h4>Continuous Learning & Building</h4>
+                            <p>Improving front-end development, Git workflows, responsive design, UI implementation, and
+                                real-world project skills.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  Contact  -->
+        <section id="contact" class="section-padding section-dark">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="section-label">CONTACT</span>
+                    <h2>Let's build something <span class="gradient-text">great.</span></h2>
+                    <p>Have a project, idea, or opportunity? Send me a message.</p>
+                </div>
+
+                <div class="row g-5 align-items-start">
+                    <div class="col-lg-5 reveal reveal-left">
+                        <div class="contact-info">
+                            <h3>Get in touch</h3>
+                            <p>I'm open to learning opportunities, collaboration, and web development projects.</p>
+
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="bi bi-envelope"></i></div>
+                                <div><span>Email</span><a href="mailto:your@email.com">flahzyy@gmail.com</a></div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="bi bi-geo-alt"></i></div>
+                                <div><span>Location</span><strong>Cambodia</strong></div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="bi bi-building"></i></div>
+                                <div><span>Study / Work</span><strong>NTTI · samnab Technology</strong></div>
+                            </div>
+
+                            <div class="social-links contact-socials mt-4">
+                                <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                                <a href="#" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7 reveal reveal-right">
+                        <form id="contactForm" class="contact-form" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" class="form-control"
+                                        placeholder="Your name" required>
+                                    <small class="error-message"></small>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" class="form-control"
+                                        placeholder="you@example.com" required>
+                                    <small class="error-message"></small>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" id="subject" name="subject" class="form-control"
+                                        placeholder="Project subject" required>
+                                    <small class="error-message"></small>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" class="form-control" rows="6"
+                                        placeholder="Tell me about your project..." required></textarea>
+                                    <small class="error-message"></small>
+                                </div>
+
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary-custom">
+                                        Send Message <i class="bi bi-send"></i>
+                                    </button>
+                                    <p id="formStatus" class="form-status" role="status"></p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--  Footer  -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <a href="#home" class="footer-brand">Your<span>Name</span></a>
+                <p>Web Developer · NTTI · samnab Technology</p>
+                <div class="social-links">
+                    <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>© <span id="currentYear"></span> Your Name. All rights reserved.</span>
+                <a href="#home">Back to top <i class="bi bi-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
